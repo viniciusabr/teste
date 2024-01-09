@@ -68,15 +68,13 @@ function start() {
     document.getElementById('pontos1').innerHTML = soma1
     document.getElementById('pontos2').innerHTML = soma2
 
-
-
   }
   function adicionar(){
     var nome = document.getElementById('enter').value
 
     document.getElementById('enter').addEventListener('keypress', function(event){
         if(event.key === 'Enter'){
-            document.getElementById('nome').innerHTML = nome
+            document.getElementById('nome').innerHTML = nome.toUpperCase()
         }
     })
 
